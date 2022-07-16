@@ -7,10 +7,11 @@
   <a href="https://prettier.io">
     <img src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg" alt="code style: prettier" />
   </a>
-  <a href="https://github.com/nhost/hasura-backend-plus/actions?query=workflow%Build+branch%3Amaster+event%3Apush">
-    <img src="https://github.com/nhost/hasura-backend-plus/workflows/Build/badge.svg?branch=master"/>
-  </a>
 </p>
+
+## Screenshots
+
+![cms-builder](https://user-images.githubusercontent.com/56479636/179369002-5af6b58a-6e02-448c-8853-8ec88974f889.gif)
 
 ## Environment
 
