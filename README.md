@@ -16,7 +16,7 @@
 ## Environment
 
 - Node ^16
-- Vue ^ 12
+- Vue ^2.6
 
 ## Dependencies
 
@@ -49,6 +49,8 @@ This project is [MIT](LICENSE) licensed.
 - Vue Material
 - Vue aos
 - Vue Custom Plugin
+- Eslint
+- Prettier
 
 ## Core Features
 
