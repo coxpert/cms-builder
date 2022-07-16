@@ -26,7 +26,7 @@
 ### Clone Repository
 
 ```
-git clone https://github.com/unigisper8/next-material-ui.git
+git clone https://github.com/wanmfsdev/cms-builder.git
 ```
 
 ### Run
@@ -41,4 +41,4 @@ yarn dev
 This project is [MIT](LICENSE) licensed.
 
 ## Core Features
-```
+
