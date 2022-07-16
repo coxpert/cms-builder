@@ -34,12 +34,27 @@ git clone https://github.com/wanmfsdev/cms-builder.git
 
 ```bash
 yarn install
-yarn dev
+yarn serve
 ```
 
 ## 📝 License
 
 This project is [MIT](LICENSE) licensed.
 
+## Technical
+
+- Vue 2, Vuex, Custom Vue plugin
+- Vue carousel
+- Vue google map
+- Vue Material
+- Vue aos
+- Vue Custom Plugin
+
 ## Core Features
 
+- 150+ pre-built sections that is customizable in content
+- Page creation, page builder using the sections
+- Custom Theme color, font family
+- Custom Background (color, image, video, overlay, pattern, animation effect)
+- Customize font (color, family, size)
+- Animation Elment
