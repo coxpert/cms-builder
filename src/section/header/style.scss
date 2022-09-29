@@ -1,0 +1,32 @@
+.bz-header {
+  max-width: 1440px;
+  padding: 12px;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  min-height: 70px;
+  height: 100%;
+}
+
+.bz-action {
+  display: flex;
+}
+
+.menu-button {
+  background-color: var(--bz-primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  margin-left: 20px;
+  z-index: 10001;
+  height: 50px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.menu-item,
+.link-text {
+  color: var(--bz-header-menu-item-color, #555555) !important;
+}

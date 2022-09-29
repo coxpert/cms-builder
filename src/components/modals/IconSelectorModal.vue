@@ -1,0 +1,150 @@
+<template>
+  <modal
+    width="90%"
+    :classes="['bz-modal--icon-selector-root']"
+    name="iconSelector"
+    @closed="onClose"
+  >
+    <div class="modal-header p-3" style="background-color: rgb(246, 246, 246)">
+      <h5>Icons</h5>
+
+      <div class="d-flex align-items-center">
+        <div class="search-box-wrapper">
+          <input
+            v-model="searchText"
+            class="form-control"
+            placeholder="Search Icon"
+            type="text"
+          />
+        </div>
+        <div
+          class="d-flex align-items-center justify-content-center ml-3"
+          @click="onClose"
+        >
+          <close-icon :fill-color="'#555555'" />
+        </div>
+      </div>
+    </div>
+    <div class="p-4 modal-content">
+      <div class="w-100 h-100 overflow-y-auto">
+        <div class="no-icon" @click="select('')">No Icon</div>
+        <template v-for="(group, groupName) in iconNames">
+          <div :key="groupName" class="flex-row">
+            <h6 class="w-100 text-capitalize">{{ groupName }}</h6>
+            <template v-for="icon in group">
+              <div
+                v-if="
+                  group.includes(searchText.toLowerCase()) ||
+                  icon.includes(searchText.toLowerCase())
+                "
+                :key="icon"
+                class="flex-cell"
+                @click="select(icon)"
+              >
+                <i :class="icon"></i>
+              </div>
+            </template>
+          </div>
+        </template>
+      </div>
+    </div>
+  </modal>
+</template>
+
+<script>
+import icons from "../../data/icons";
+import CloseIcon from "../icons/Close";
+import { mapMutations } from "vuex";
+import modalMixin from "../../mixins/modalMixin";
+
+export default {
+  name: "IconSelectorModal",
+  components: { CloseIcon },
+  mixins: [modalMixin],
+  data() {
+    return {
+      searchText: "",
+      iconNames: [],
+    };
+  },
+  mounted() {
+    this.$modal.show("icon-selector");
+    this.iconNames = icons;
+  },
+  methods: {
+    select(selection) {
+      this.$store.state.modals.basic.onChange(selection);
+      this.closeModal();
+    },
+    ...mapMutations(["closeModal"]),
+  },
+};
+</script>
+
+<style lang="scss">
+.bz-modal--icon-selector-root {
+  max-width: 800px;
+  height: 70vh !important;
+  top: 15vh !important;
+  padding-bottom: 15px;
+  margin: auto;
+  left: 0 !important;
+
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .search-box-wrapper {
+      width: 200px;
+    }
+  }
+
+  .modal-content {
+    width: 100%;
+    height: calc(100% - 70px);
+    overflow-y: auto;
+    border: none;
+
+    .no-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.5s;
+      border-radius: 4px;
+      width: 80px;
+      height: 48px;
+      margin: 2px;
+      background-color: #0000000d;
+
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        transition: 0.5s;
+      }
+    }
+
+    .flex-row {
+      display: flex;
+      flex-flow: row wrap;
+      margin-top: 20px;
+    }
+    .flex-cell {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.5s;
+      border-radius: 4px;
+      width: 48px;
+      height: 48px;
+      margin: 2px;
+      background-color: #0000000d;
+    }
+    .flex-cell:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: 0.5s;
+    }
+  }
+}
+</style>
