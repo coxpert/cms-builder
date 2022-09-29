@@ -1,4 +1,4 @@
-<template functional>
+<template>
   <span
     :aria-hidden="props.decorative"
     :aria-label="props.title"

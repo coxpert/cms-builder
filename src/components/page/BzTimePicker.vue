@@ -80,16 +80,6 @@ export default {
   name: "bz-time-picker",
   components: {},
   props: {
-    value: {
-      type: String | Number | Date | Object,
-      required: false,
-      default: "",
-    },
-    valueFormatted: {
-      type: String | Number | Date | Object,
-      required: false,
-      default: "",
-    },
     minuteStep: {
       type: Number,
       required: false,

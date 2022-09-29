@@ -9,6 +9,7 @@ export const pageMutation = {
     state.template = defaultTemplate.template;
     state.moduleCategories = defaultTemplate.moduleCategories;
     state.pages = defaultTemplate.template.pages;
+    state.loadingData = false;
   },
   updatePages(state, payload) {
     if (payload) {

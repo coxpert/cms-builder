@@ -1,4 +1,4 @@
-<template functional>
+<template>
   <span
     :aria-label="props.title"
     :class="[data.class, data.staticClass]"

@@ -4,14 +4,14 @@
       <Loading :active="true" :is-full-page="true" color="#0076DF" />
     </template>
     <template v-else>
-      <Modals />
+      <!-- <Modals /> -->
       <div class="edit_page_container">
         <div class="content_body w-100 bg-transparent">
           <NavBar />
-          <SliderBar />
-          <SettingPanel />
+          <!-- <SliderBar /> -->
+          <!-- <SettingPanel /> -->
           <div class="bz-page-content">
-            <PageContent />
+            <!-- <PageContent /> -->
           </div>
         </div>
       </div>
@@ -20,24 +20,29 @@
 </template>
 
 <script>
-import PageContent from "./page/PageContent";
-import NavBar from "./page/NavBar";
-import SliderBar from "./page/SliderBar";
-import SettingPanel from "./page/SettingPanel";
 import Loading from "vue-loading-overlay";
+import NavBar from "./page/NavBar";
+// import PageContent from "./page/PageContent";
+// import SliderBar from "./page/SliderBar";
+// import SettingPanel from "./page/SettingPanel";
+// import Modals from "./modals/Modals";
 import componentMixin from "../mixins/componentMixin";
-import Modals from "./modals/Modals";
 
 export default {
   components: {
-    Modals,
-    SettingPanel,
-    SliderBar,
-    NavBar,
-    PageContent,
     Loading,
+    NavBar,
+    // Modals,
+    // SettingPanel,
+    // SliderBar,
+    // PageContent,
   },
   mixins: [componentMixin],
+  computed: {
+    loadingData() {
+      return this.$store.state.loadingData;
+    },
+  },
   created() {
     this.$store.commit("enableEdit");
     this.$store.commit("setTemplate");
