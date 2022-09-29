@@ -48786,7 +48786,6 @@ export default {
       ],
     },
   ],
-  moduleCategories: null,
   countries: [
     {
       id: 1,
@@ -51057,12 +51056,4 @@ export default {
       phonecode: 211,
     },
   ],
-  modules: {
-    activeModules: [],
-    blog: {
-      categories: null,
-      posts: null,
-      page: null,
-    },
-  },
 };
