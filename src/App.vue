@@ -35,7 +35,7 @@ export default {
     // SliderBar,
     // NavBar,
     // PageContent,
-    // Loading,
+    Loading,
   },
   mixins: [componentMixin],
   created() {
