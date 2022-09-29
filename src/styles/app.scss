@@ -37,8 +37,11 @@
 $active: #0076df;
 $animationDuration: 0.8s;
 
+@import "./variables.scss";
+@import "./preview.scss";
+
 // Bootstrap
-@import "~bootstrap/dist/css/bootstrap.css";
+@import "~bootstrap/scss/bootstrap";
 
 // FontAwesome
 @import "@fortawesome/fontawesome-free/css/all.css";
