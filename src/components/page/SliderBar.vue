@@ -59,7 +59,7 @@
       </ul>
     </div>
     <template v-if="activePage">
-      <!-- <section-list v-if="activeSlider === 'sections'" /> -->
+      <section-list v-if="activeSlider === 'sections'" />
       <!-- <theme-settings v-if="activeSlider === 'theme'" /> -->
       <!-- <page-setting v-if="activeSlider === 'pages'" /> -->
       <!-- <template-settings v-if="activeSlider === 'settings'" /> -->
@@ -77,7 +77,7 @@ import ColorLensIcon from "../icons/ColorLens";
 import SettingIcon from "../icons/Setting";
 import AddCircleIcon from "../icons/AddCircle";
 import InsertDriveFileIcon from "../icons/InsertDriveFile";
-// import SectionList from "./SectionList";
+import SectionList from "./SectionList";
 // import TemplateSettings from "./TemplateSettings";
 // import ThemeSettings from "./ThemeSettings";
 // import PageSetting from "./PagesSetting";
@@ -88,7 +88,7 @@ export default {
     // PageSetting,
     // ThemeSettings,
     // TemplateSettings,
-    // SectionList,
+    SectionList,
     InsertDriveFileIcon,
     AddCircleIcon,
     SettingIcon,

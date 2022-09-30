@@ -4,7 +4,7 @@
       <Loading :active="true" :is-full-page="true" color="#0076DF" />
     </template>
     <template v-else>
-      <!-- <Modals /> -->
+      <Modals />
       <div class="edit_page_container">
         <div class="content_body w-100 bg-transparent">
           <NavBar />
@@ -25,14 +25,14 @@ import NavBar from "./page/NavBar";
 // import PageContent from "./page/PageContent";
 import SliderBar from "./page/SliderBar";
 // import SettingPanel from "./page/SettingPanel";
-// import Modals from "./modals/Modals";
+import Modals from "./modals/Modals";
 import componentMixin from "../mixins/componentMixin";
 
 export default {
   components: {
     Loading,
     NavBar,
-    // Modals,
+    Modals,
     // SettingPanel,
     SliderBar,
     // PageContent,

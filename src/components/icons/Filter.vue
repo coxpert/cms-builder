@@ -2,10 +2,8 @@
   <span
     :aria-hidden="decorative"
     :aria-label="title"
-    :class="[data.class, data.staticClass]"
     class="material-design-icon delete-icon"
     role="img"
-    v-bind="data.attrs"
   >
     <svg
       :fill="fillColor"

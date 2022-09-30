@@ -22,7 +22,7 @@
         </div>
       </div>
     </div>
-    <div class="section_content h-100 d-flex">
+    <!-- <div class="section_content h-100 d-flex">
       <div
         class="section_category_area w-50 p-3 preview_content_ul custom-scroll-h scroll-w-5"
       >
@@ -113,7 +113,7 @@
           </template>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 

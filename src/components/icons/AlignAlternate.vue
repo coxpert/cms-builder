@@ -1,11 +1,5 @@
 <template>
-  <span
-    :aria-label="title"
-    :class="[data.class, data.staticClass]"
-    class="material-design-icon delete-icon"
-    role="img"
-    v-bind="data.attrs"
-  >
+  <span :aria-label="title" class="material-design-icon delete-icon" role="img">
     <svg
       :fill="fillColor"
       class="material-design-icon__svg"

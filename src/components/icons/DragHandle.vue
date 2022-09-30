@@ -2,10 +2,8 @@
   <span
     :aria-hidden="decorative"
     :aria-label="title"
-    :class="[data.class, data.staticClass]"
     class="material-design-icon drag-vertical-icon"
     role="img"
-    v-bind="data.attrs"
     :style="{ pointerEvents: 'none' }"
   >
     <svg
