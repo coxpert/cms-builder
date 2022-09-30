@@ -6,7 +6,6 @@
     class="material-design-icon delete-icon"
     role="img"
     v-bind="data.attrs"
-    v-on="listeners"
   >
     <svg
       :fill="fillColor"

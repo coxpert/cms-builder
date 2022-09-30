@@ -4,7 +4,6 @@
     :aria-label="title"
     class="material-design-icon delete-icon"
     role="img"
-    v-on="listeners"
   >
     <svg
       :fill="fillColor"

@@ -6,7 +6,6 @@
     class="material-design-icon drag-vertical-icon"
     role="img"
     v-bind="data.attrs"
-    v-on="listeners"
     :style="{ pointerEvents: 'none' }"
   >
     <svg

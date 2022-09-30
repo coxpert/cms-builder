@@ -48,11 +48,11 @@ export default {
     this.$store.commit("setTemplate");
   },
   mounted() {
-    if (window.appEnv !== "local") {
-      window.onbeforeunload = function () {
-        return "Do you want to leave?";
-      };
-    }
+    // if (window.appEnv !== "local") {
+    //   window.onbeforeunload = function () {
+    //     return "Do you want to leave?";
+    //   };
+    // }
   },
 };
 </script>
