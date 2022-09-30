@@ -40,10 +40,9 @@
           draggable=".item"
           @end="handlePageDragEnd"
         >
-          <template v-for="(page, index) in allPages">
+          <template v-for="(page, index) in allPages" :key="index">
             <div
               v-if="page.type !== 'module'"
-              :key="index"
               v-ripple
               class="page_item item cursor-pointer"
               :class="{ active: index === indexOfActivePage }"

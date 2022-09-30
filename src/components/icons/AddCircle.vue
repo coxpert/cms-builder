@@ -1,24 +1,22 @@
 <template>
   <span
-    :aria-hidden="props.decorative"
-    :aria-label="props.title"
-    :class="[data.class, data.staticClass]"
+    :aria-hidden="decorative"
+    :aria-label="title"
     class="material-design-icon delete-icon"
     role="img"
-    v-bind="data.attrs"
     v-on="listeners"
   >
     <svg
-      :fill="props.fillColor"
+      :fill="fillColor"
       class="material-design-icon__svg"
-      :width="props.size"
-      :height="props.size"
+      :width="size"
+      :height="size"
       viewBox="0 0 24 24"
     >
       <path
         d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"
       >
-        <title>{{ props.title }}</title>
+        <title>{{ title }}</title>
       </path>
     </svg>
   </span>

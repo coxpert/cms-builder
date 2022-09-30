@@ -66,15 +66,16 @@
         </div>
         <p class="heading mb-0 fs-18px font-weight-bold pb-2">All categories</p>
         <ul class="ml-0 mb-0 pl-2 list-style-none">
-          <template v-for="(cat, key2) in restCategories">
-            <li :key="key2" class="side_category_item">
+          <template v-for="(cat, key2) in restCategories" :key="key2">
+            <li class="side_category_item">
               <a
                 href=""
                 class="mb-1"
                 :class="{ active: activeCategory.id === cat.id }"
                 @click.prevent="handleCategoryClick(cat)"
-                >{{ cat.name }}</a
               >
+                {{ cat.name }}
+              </a>
             </li>
           </template>
         </ul>

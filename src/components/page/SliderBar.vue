@@ -59,10 +59,10 @@
       </ul>
     </div>
     <template v-if="activePage">
-      <section-list v-if="activeSlider === 'sections'" />
-      <theme-settings v-if="activeSlider === 'theme'" />
-      <page-setting v-if="activeSlider === 'pages'" />
-      <template-settings v-if="activeSlider === 'settings'" />
+      <!-- <section-list v-if="activeSlider === 'sections'" /> -->
+      <!-- <theme-settings v-if="activeSlider === 'theme'" /> -->
+      <!-- <page-setting v-if="activeSlider === 'pages'" /> -->
+      <!-- <template-settings v-if="activeSlider === 'settings'" /> -->
     </template>
     <div
       class="close-panel-over-layer"
@@ -77,18 +77,18 @@ import ColorLensIcon from "../icons/ColorLens";
 import SettingIcon from "../icons/Setting";
 import AddCircleIcon from "../icons/AddCircle";
 import InsertDriveFileIcon from "../icons/InsertDriveFile";
-import SectionList from "./SectionList";
-import TemplateSettings from "./TemplateSettings";
-import ThemeSettings from "./ThemeSettings";
-import PageSetting from "./PagesSetting";
+// import SectionList from "./SectionList";
+// import TemplateSettings from "./TemplateSettings";
+// import ThemeSettings from "./ThemeSettings";
+// import PageSetting from "./PagesSetting";
 import builderMixin from "../../mixins/builderMixin";
 
 export default {
   components: {
-    PageSetting,
-    ThemeSettings,
-    TemplateSettings,
-    SectionList,
+    // PageSetting,
+    // ThemeSettings,
+    // TemplateSettings,
+    // SectionList,
     InsertDriveFileIcon,
     AddCircleIcon,
     SettingIcon,

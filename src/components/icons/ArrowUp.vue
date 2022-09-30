@@ -1,7 +1,7 @@
 <template>
   <span
-    :aria-hidden="props.decorative"
-    :aria-label="props.title"
+    :aria-hidden="decorative"
+    :aria-label="title"
     :class="[data.class, data.staticClass]"
     class="material-design-icon delete-icon"
     role="img"
@@ -9,10 +9,10 @@
     v-on="listeners"
   >
     <svg
-      :fill="props.fillColor"
+      :fill="fillColor"
       class="material-design-icon__svg"
-      :width="props.size"
-      :height="props.size"
+      :width="size"
+      :height="size"
       viewBox="0 0 24 24"
     >
       <path d="M7.41 15.41 12 10.83l4.59 4.58L18 14l-6-6-6 6z">

@@ -8,7 +8,7 @@
       <div class="edit_page_container">
         <div class="content_body w-100 bg-transparent">
           <NavBar />
-          <!-- <SliderBar /> -->
+          <SliderBar />
           <!-- <SettingPanel /> -->
           <div class="bz-page-content">
             <!-- <PageContent /> -->
@@ -23,7 +23,7 @@
 import Loading from "vue-loading-overlay";
 import NavBar from "./page/NavBar";
 // import PageContent from "./page/PageContent";
-// import SliderBar from "./page/SliderBar";
+import SliderBar from "./page/SliderBar";
 // import SettingPanel from "./page/SettingPanel";
 // import Modals from "./modals/Modals";
 import componentMixin from "../mixins/componentMixin";
@@ -34,7 +34,7 @@ export default {
     NavBar,
     // Modals,
     // SettingPanel,
-    // SliderBar,
+    SliderBar,
     // PageContent,
   },
   mixins: [componentMixin],
